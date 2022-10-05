@@ -1156,7 +1156,7 @@ ios_framework(
     extension_safe = True,
     ipa_post_processor = strip_framework,
     deps = [
-        "//submodules/KallerUI:KallerUI",
+        "//submodules/TelegramUI:TelegramUI",
     ] + debug_deps,
 )
 
