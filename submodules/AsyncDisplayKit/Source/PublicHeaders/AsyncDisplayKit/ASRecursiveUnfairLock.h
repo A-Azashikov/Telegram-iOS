@@ -67,6 +67,7 @@ NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_BEGIN
 
 typedef struct {
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
   OSSpinLock _lock;
   _Atomic(pthread_t) _thread;  // Write-protected by lock
   int _count;                  // Protected by lock
